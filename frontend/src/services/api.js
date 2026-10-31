@@ -2,7 +2,7 @@
  * EcoVision AI - Frontend API Service Client
  */
 
-const RAW_API_URL = import.meta.env.VITE_API_BASE_URL || '';
+const RAW_API_URL = import.meta.env.VITE_API_BASE_URL || 'https://ecovision-backend-wifq.onrender.com';
 const API_BASE_URL = RAW_API_URL.replace(/\/+$/, '');
 
 export const api = {

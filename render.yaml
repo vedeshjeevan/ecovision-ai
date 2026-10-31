@@ -18,3 +18,4 @@ services:
         value: "0.35"
       - key: MODEL_VERSION
         value: 1.0.0-mobilenetv2
+
