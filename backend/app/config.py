@@ -18,7 +18,7 @@ class Settings:
     
     # Server configs
     HOST: str = os.getenv("BACKEND_HOST", "0.0.0.0")
-    PORT: int = int(os.getenv("BACKEND_PORT", "8000"))
+    PORT: int = int(os.getenv("PORT", os.getenv("BACKEND_PORT", "8000")))
     
     # CORS
     CORS_ORIGINS: list[str] = [

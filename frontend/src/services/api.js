@@ -2,7 +2,8 @@
  * EcoVision AI - Frontend API Service Client
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
+const RAW_API_URL = import.meta.env.VITE_API_BASE_URL || '';
+const API_BASE_URL = RAW_API_URL.replace(/\/+$/, '');
 
 export const api = {
   // 1. Health & Model Telemetry
